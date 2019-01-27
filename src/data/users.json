@@ -1,0 +1,19 @@
+{
+    "list": [
+        {
+            "uid": "test-site@user_id@qwe12335dJHKJKTYHUU@34345345",
+            "login": "test@email.ru",
+            "password": "123qwerty"
+        },
+        {
+            "uid": "test-site@user_id@qwe16898675JQWEJKUU@34345345",
+            "login": "test2@email.ru",
+            "password": "qwerty123"
+        },
+        {
+            "uid": "test-site@user_id@t239854JHKKJ45KJJHs@34345345",
+            "login": "test3@email.ru",
+            "password": "qweasd123"
+        }
+    ]
+}
