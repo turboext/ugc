@@ -1,0 +1,29 @@
+{
+    "compilerOptions": {
+        "target": "es5",
+        "lib": [
+            "es2015",
+            "dom",
+            "esnext.asynciterable"
+        ],
+        "module": "commonjs",
+        "moduleResolution": "node",
+        "outDir": "dist",
+        "isolatedModules": false,
+        "experimentalDecorators": true,
+        "declaration": true,
+        "noImplicitAny": true,
+        "strictNullChecks": true,
+        "removeComments": true,
+        "suppressImplicitAnyIndexErrors": true,
+        "allowSyntheticDefaultImports": true,
+        "sourceMap": true
+    },
+    "include": [
+        "src/**/*.ts"
+    ],
+    "exclude": [
+        "dist"
+    ],
+    "compileOnSave": false
+}
