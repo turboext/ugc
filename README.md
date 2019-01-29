@@ -1,6 +1,9 @@
 # ugc
 Репозиторий с примерами взаимодействия с UGC компонентами Турбо-страниц, таких как Авторизация и Комментарии
 
+## Примеры
+[Форма авторизации](https://turboext.github.io/ugc/examples/default-auth-form/auth.html)
+
 ## Разработка
 ```bash
 git clone git@github.com:turboext/ugc.git
