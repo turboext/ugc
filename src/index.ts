@@ -13,7 +13,7 @@ import { resolve } from 'path';
 
 const app = express();
 
-app.use('/examples', express.static(resolve(__dirname, '..', 'examples')));
+app.use('/ugc/examples', express.static(resolve(__dirname, '..', 'examples')));
 
 app.use(logger('dev'));
 app.use(bodyParser.json());
