@@ -1,7 +1,7 @@
-import { auth } from './auth';
-import { comments } from './comments';
+import { authRouter } from './auth';
+import { commentsRouter } from './comments';
 
 export default [
-    { namespace: '/auth', router: auth },
-    { namespace: '/comments', router: comments }
+    { namespace: '/auth', router: authRouter },
+    { namespace: '/comments', router: commentsRouter }
 ];

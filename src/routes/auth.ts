@@ -67,4 +67,4 @@ router.get('/logout', (req: IRequest, res: Response, next: NextFunction) => {
     res.end();
 });
 
-export const auth = router;
+export const authRouter = router;

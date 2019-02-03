@@ -1,0 +1,70 @@
+{
+    "data": {
+        "comments": [
+            {
+                "name": "Homer",
+                "date": 1536210000,
+                "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+                "id": "1111",
+                "replies": [
+                    {
+                        "name": "Moe",
+                        "date": 1536210000,
+                        "content": "Phasellus interdum feugiat dui id facilisis.",
+                        "id": "2222",
+                        "replies": [
+                            {
+                                "name": "Barney",
+                                "date": 1536210000,
+                                "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+                                "id": "3333"
+                            },
+                            {
+                                "id": "id-1549203516-278",
+                                "data": 1549203516,
+                                "name": "test@email.ru",
+                                "content": "test-test"
+                            },
+                            {
+                                "id": "id-1549206018-6579",
+                                "data": 1549206018,
+                                "name": "test@email.ru",
+                                "content": "test-test1"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Homer",
+                "date": 1536210000,
+                "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+                "id": "55556"
+            },
+            {
+                "id": "id-1549203423-3429",
+                "data": 1549203423,
+                "name": "test@email.ru",
+                "content": "firstTest",
+                "replies": [
+                    {
+                        "id": "id-1549203499-931",
+                        "data": 1549203499,
+                        "name": "test@email.ru",
+                        "content": "secondTest"
+                    }
+                ]
+            }
+        ]
+    },
+    "index": {
+        "1111": "1111",
+        "2222": "1111.2222",
+        "3333": "1111.2222.3333",
+        "55556": "55556",
+        "id-1549203423-3429": "id-1549203423-3429",
+        "id-1549203499-931": "id-1549203423-3429.id-1549203499-931",
+        "id-1549203516-278": "1111.2222.id-1549203516-278",
+        "id-1549206018-6579": "1111.2222.id-1549206018-6579"
+    }
+}
