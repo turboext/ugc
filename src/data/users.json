@@ -3,7 +3,8 @@
         {
             "uid": "test-site@user_id@qwe12335dJHKJKTYHUU@34345345",
             "login": "test@email.ru",
-            "password": "123qwerty"
+            "password": "123qwerty",
+            "turboId": "tuid-143464456e-fvfsdc3"
         },
         {
             "uid": "test-site@user_id@qwe16898675JQWEJKUU@34345345",
