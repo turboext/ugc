@@ -40,10 +40,11 @@ app.use((err: StatusedError, req: IRequest, res: Response, next: NextFunction): 
 });
 
 const DEFAULT_PORT = 8085;
-const port = process.env.PORT || DEFAULT_PORT;
-app.listen(port, () => {
+const port = Number(process.env.PORT) || DEFAULT_PORT;
+const host = process.env.HOST || '0.0.0.0';
+app.listen(port, host, () => {
     // tslint:disable-next-line:no-console
-    console.info(`Server running on ${port}`);
+    console.info(`Server running on ${port} ${host}`);
 });
 
 module.exports = app;

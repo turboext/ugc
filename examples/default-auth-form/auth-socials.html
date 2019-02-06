@@ -31,6 +31,27 @@
 
                 <button class="button form__submit" type="submit"><span class="button__label">Войти</span></button>
             </form>
+            <a class="link" href="#">Забыли пароль?</a>
+            <a class="link" href="#">Регистрация</a>
+
+            <h2 class="header_2">Вход с помощью соцсетей</h2>
+            <div class="row">
+                <a href="#" class="button button_circle button_social button_type_vk">
+                    <div class="icon">
+                        <svg class="icon__svg"><use xlink:href="#vk"></use></svg>
+                    </div>
+                </a>
+                <a href="#" class="button button_circle button_social button_type_fb">
+                    <div class="icon">
+                        <svg class="icon__svg"><use xlink:href="#fb"></use></svg>
+                    </div>
+                </a>
+                <a href="#" class="button button_circle button_social button_type_google">
+                    <div class="icon">
+                        <svg class="icon__svg"><use xlink:href="#google"></use></svg>
+                    </div>
+                </a>
+            </div>
         </div>
         <link rel="stylesheet" href="/ugc/examples/default-auth-form/auth.css">
         <script>
@@ -71,7 +92,7 @@
                             login: body.login,
                             success: true
                         }, '*');
-                    })
+                    });
             }
 
             document.addEventListener('DOMContentLoaded', init);

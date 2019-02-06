@@ -14,6 +14,7 @@ const router: Router = Router();
 
 router.get('/', (req: IRequest, res: Response, next: NextFunction) => {
     if (req.user) {
+        res.contentType('application/json');
         res.status(ResponseStatus.OK);
         res.send({ id: req.user.uid, login: req.user.login });
     } else {
@@ -55,15 +56,21 @@ router.post('/login', async (req: IRequest, res: Response, next: NextFunction) =
 
     setUser(user);
 
-    res.cookie(USER_ID_COOKIE, user.uid);
+    res.contentType('application/json');
     res.status(ResponseStatus.OK);
     res.send({ login });
     res.end();
 });
 
 router.get('/logout', (req: IRequest, res: Response, next: NextFunction) => {
-    res.clearCookie(USER_ID_COOKIE);
+    if (req.user) {
+        req.user.turboId = '';
+        setUser(req.user);
+    }
+
+    res.contentType('application/json');
     res.status(ResponseStatus.OK);
+    res.send({ status: 'logged out' });
     res.end();
 });
 
