@@ -4,8 +4,10 @@
   "description": "Examples for UGC Turbo-Components",
   "main": "src/index.js",
   "scripts": {
-    "start": "nodemon -e ts -w ./src -x npm run watch",
-    "watch": "tsc && node ./dist/index.js"
+    "start": "PORT=9008 node ./dist/index.js",
+    "start:dev": "nodemon -e ts -w ./src -x npm run watch",
+    "watch": "tsc && node ./dist/index.js",
+    "build": "tsc"
   },
   "repository": {
     "type": "git",
