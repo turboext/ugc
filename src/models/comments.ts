@@ -24,7 +24,7 @@ export interface IComments {
 
 export interface IComment {
     id: string;
-    data: number;
+    date: number;
 
     name: string;
     content: string;
@@ -122,12 +122,12 @@ export async function setComment(
     const parentCommentId = incomingComment.answer_to;
     const ms = 1000;
     const multiple = 10000;
-    const data = Math.round(Date.now() / ms);
+    const date = Math.round(Date.now() / ms);
 
-    const newId = `id-${data}-${Math.round(Math.random() * multiple)}`;
+    const newId = `id-${date}-${Math.round(Math.random() * multiple)}`;
     const comment: IComment = {
         id: newId,
-        data,
+        date,
         name: user.login,
         content: incomingComment.text
     };

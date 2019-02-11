@@ -43,13 +43,13 @@
             },
             {
                 "id": "id-1549203423-3429",
-                "data": 1549203423,
+                "date": 1549203423,
                 "name": "test@email.ru",
                 "content": "firstTest",
                 "replies": [
                     {
                         "id": "id-1549203499-931",
-                        "data": 1549203499,
+                        "date": 1549203499,
                         "name": "test@email.ru",
                         "content": "secondTest"
                     }

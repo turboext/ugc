@@ -37,7 +37,7 @@ router.post('/', async (req: IRequest, res, next) => {
 
     const { answer_to, text } = req.body;
 
-    const { id, data } = await setComment(
+    const { id, date } = await setComment(
         pageUrl,
         {
             answer_to,
@@ -47,7 +47,7 @@ router.post('/', async (req: IRequest, res, next) => {
     );
 
     res.status(ResponseStatus.OK);
-    res.send({ id, data });
+    res.send({ id, date });
     res.end();
 });
 
