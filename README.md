@@ -15,13 +15,16 @@ open http://localhost:8085/auth/login/form?TURBO_ID=234dsdsdfw4
 ```
 
 ## Структура репозитория
-### examples - директория с примерами верстки/статики, например:
+### examples - директория с примерами верстки/статики/настроек, например:
 ```
 examples/
-└── default-auth-form
-    ├── README.md
-    ├── auth.css
-    └── auth.html
+├── default-auth-form
+│   ├── README.md
+│   ├── auth-socials.html
+│   ├── auth.css
+│   └── auth.html
+└── nginx
+    └── config
 ```
 где default-auth-form - пример верстки формы авторизации.
 
