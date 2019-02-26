@@ -1,7 +1,6 @@
 import { Router, Response, NextFunction } from 'express';
 import { IRequest } from '../utils/request';
 import { ResponseStatus } from '../utils/response';
-import { USER_ID_COOKIE } from '../middlewares/withUser';
 import { readFile as readFileCallback } from 'fs';
 import { promisify } from 'util';
 import { resolve } from 'path';
