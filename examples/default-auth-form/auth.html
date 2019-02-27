@@ -58,14 +58,23 @@
             function handlerFormSubmit(e) {
                 e.preventDefault();
 
+                var loginInput = document.getElementById('email');
+                var passwordInput = document.getElementById('password');
+
                 var body = {
-                    login: document.getElementById('email').value,
-                    password: document.getElementById('password').value
+                    login: loginInput.value,
+                    password: passwordInput.value
                 };
 
                 submit(body)
                     .then(function(response) {
-                        var result = response.json();
+                        if (!response.ok) {
+                            loginInput.classList.add('error');
+                            passwordInput.classList.add('error');
+
+                            return;
+                        }
+
                         window.top.postMessage({
                             action: 'login',
                             login: body.login,
