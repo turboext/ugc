@@ -11,8 +11,7 @@ import { ResponseStatus } from './utils/response';
 import { resolve } from 'path';
 
 import { withUser } from './middlewares/withUser';
-import { cors } from "./middlewares/cors";
-
+import { cors } from './middlewares/cors';
 
 const app = express();
 
@@ -44,6 +43,7 @@ app.use((err: StatusedError, req: IRequest, res: Response, next: NextFunction): 
     res.locals.error = req.app.get('env') === 'development' ? err : {};
 
     res.status(err.status || ResponseStatus.SERVER_ERROR);
+    res.end();
 });
 
 const DEFAULT_PORT = 8085;
