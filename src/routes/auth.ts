@@ -1,14 +1,17 @@
 import { Router, Response, NextFunction } from 'express';
 import { IRequest } from '../utils/request';
 import { ResponseStatus } from '../utils/response';
-import { USER_ID_COOKIE } from '../middlewares/withUser';
 import { readFile as readFileCallback } from 'fs';
 import { promisify } from 'util';
 import { resolve } from 'path';
-import { getUserByLogin, setUser } from '../models/user';
+import { addUser, getUserByLogin, setUser } from '../models/user';
 
 const readFile = promisify(readFileCallback);
-const authFormFilePath = resolve(__dirname, '..', '..', 'examples', 'default-auth-form', 'auth.html');
+
+const forms = {
+    login: resolve(__dirname, '..', '..', 'examples', 'default-auth-form', 'auth.html'),
+    register: resolve(__dirname, '..', '..', 'examples', 'default-register-form', 'register.html')
+};
 
 const router: Router = Router();
 
@@ -24,8 +27,14 @@ router.get('/', (req: IRequest, res: Response, next: NextFunction) => {
     res.end();
 });
 
-router.get('/login/form', (req: IRequest, res: Response, next: NextFunction) => {
-    return readFile(authFormFilePath, 'utf-8')
+router.get('/:formName/form', (req: IRequest, res: Response, next: NextFunction) => {
+    const { formName } = req.params;
+    if (!forms.hasOwnProperty(formName)) {
+        next();
+        return;
+    }
+
+    return readFile(forms[formName], 'utf-8')
         .then((form) => {
             const body = form.replace(/\$TURBO_ID\$/g, req.query.TURBO_ID);
             res.status(ResponseStatus.OK);
@@ -35,6 +44,27 @@ router.get('/login/form', (req: IRequest, res: Response, next: NextFunction) => 
         .catch((e) => {
             next(e);
         });
+});
+
+router.post('/register', async (req: IRequest, res: Response) => {
+    const { login, password } = req.body;
+    if (!login || !password) {
+        res.contentType('text/html');
+        res.status(ResponseStatus.BAD_REQUEST);
+        res.send('Invalid login or password');
+        res.end();
+        return;
+    }
+
+    const isUserAdded = await addUser(login, password);
+    if (!isUserAdded) {
+        res.status(ResponseStatus.CONFLICT);
+        res.send('Email already exist');
+        return;
+    }
+
+    res.status(ResponseStatus.OK);
+    res.end();
 });
 
 router.post('/login', async (req: IRequest, res: Response, next: NextFunction) => {

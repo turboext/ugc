@@ -3,5 +3,6 @@ export enum ResponseStatus {
     NOTFOUND = 404,
     SERVER_ERROR = 500,
     UNAUTHORIZED = 401,
-    BAD_REQUEST = 100
+    BAD_REQUEST = 400,
+    CONFLICT = 409
 }

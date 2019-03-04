@@ -30,6 +30,7 @@
             "spaces",
             4
         ],
+        "whitespace": [true, "check-module"],
         "prefer-const": true,
         "arrow-return-shorthand": true,
         "class-name": true,

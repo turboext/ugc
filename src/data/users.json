@@ -15,6 +15,12 @@
             "uid": "test-site@user_id@t239854JHKKJ45KJJHs@34345345",
             "login": "test3@email.ru",
             "password": "qweasd123"
+        },
+        {
+            "login": "artur@example.com",
+            "password": "12345",
+            "uid": "test-site@user_id@1551381129994",
+            "turboId": "u:24e720fefe253936c82c7d01fe19dd3b15bdcf63e875e65398e6969e6f509c84"
         }
     ]
 }

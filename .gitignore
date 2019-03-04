@@ -26,3 +26,4 @@ node_modules/
 # IDE
 .history
 .vscode
+.idea

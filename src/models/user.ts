@@ -33,6 +33,26 @@ export async function getUserByLogin(login: string): Promise<IUser | undefined> 
     return users.find((record: IUser) => record.login === login);
 }
 
+export async function addUser(login: string, password: string) {
+    const content = await readUsers();
+    const db = JSON.parse(content) as { list: IUser[] };
+
+    const isExist = db.list.some((user) => user.login === login);
+    if (isExist) {
+        return false;
+    }
+
+    const newUser: IUser = {
+        login, password,
+        uid: `test-site@user_id@${Date.now()}`
+    };
+
+    db.list.push(newUser);
+    await writeUsers(db);
+
+    return true;
+}
+
 export async function setUser(user: IUser) {
     const content = await readUsers();
     const db = JSON.parse(content) as { list: IUser[] };
