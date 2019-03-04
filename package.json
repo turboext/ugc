@@ -4,7 +4,7 @@
   "description": "Examples for UGC Turbo-Components",
   "main": "src/index.js",
   "scripts": {
-    "start": "PORT=9008 node ./dist/index.js",
+    "start": "NODE_ENV=production PORT=9008 node ./dist/index.js",
     "start:dev": "NODE_ENV=development nodemon -e ts -w ./src -x npm run watch",
     "start:debug": "node $NODE_DEBUG_OPTION ./dist/index.js",
     "watch": "tsc && node ./dist/index.js",
