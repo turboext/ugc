@@ -1,25 +1,26 @@
 import { Router } from 'express';
 import { ResponseStatus } from '../utils/response';
 import { IRequest } from '../utils/request';
-import { getComments, ICommentsStore, setComment } from '../models/comments';
+import { setComment, getCommentsPage } from '../models/comments';
 
 const router: Router = Router();
+const DEFAULT_PAGE_LIMIT = 16;
+const DEFAULT_PAGE_OFFSET = 0;
 
 // Заглушка для комментариев
 router.get('/', async (req: IRequest, res, next) => {
-    const pageUrl = req.query.ORIGIN_URL;
+    const pageUrl = req.query.ORIGINAL_URL;
+    const limit = parseInt(req.query.limit) || DEFAULT_PAGE_LIMIT;
+    const offset = parseInt(req.query.offset) || DEFAULT_PAGE_OFFSET;
 
     if (!pageUrl) {
         res.sendStatus(ResponseStatus.BAD_REQUEST);
         return res.end();
     }
 
-    const comments: ICommentsStore = await getComments(pageUrl);
+    const { data, index, ...pager } = await getCommentsPage(pageUrl, { limit, offset });
 
-    res.contentType('application/json');
-    res.status(ResponseStatus.OK);
-    res.send(comments.data);
-    res.end();
+    res.status(ResponseStatus.OK).json({ comments: data.comments, ...pager });
 });
 
 router.post('/', async (req: IRequest, res, next) => {
