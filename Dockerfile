@@ -13,3 +13,4 @@ ADD . /var/www/turbo-ugc
 
 CMD npm start
 
+EXPOSE 9008

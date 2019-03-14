@@ -12,38 +12,42 @@
                         "date": 1536210000,
                         "content": "Phasellus interdum feugiat dui id facilisis.",
                         "id": "2222",
-                        "replies": [
-                            {
-                                "name": "Barney",
-                                "date": 1536210000,
-                                "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-                                "id": "3333"
-                            },
-                            {
-                                "id": "id-1549203516-278",
-                                "data": 1549203516,
-                                "name": "test@email.ru",
-                                "content": "test-test"
-                            },
-                            {
-                                "id": "id-1549206018-6579",
-                                "data": 1549206018,
-                                "name": "test@email.ru",
-                                "content": "test-test1"
-                            },
-                            {
-                                "id": "id-1549562264-7089",
-                                "data": 1549562264,
-                                "name": "test@email.ru",
-                                "content": "test-test1"
-                            },
-                            {
-                                "id": "id-1549562407-3502",
-                                "data": 1549562407,
-                                "name": "test@email.ru",
-                                "content": "test-test1"
-                            }
-                        ]
+                        "answer_to": "1111"
+                    },
+                    {
+                        "name": "Barney",
+                        "date": 1536210000,
+                        "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+                        "id": "3333",
+                        "answer_to": "2222"
+                    },
+                    {
+                        "id": "id-1549203516-278",
+                        "data": 1549203516,
+                        "name": "test@email.ru",
+                        "content": "test-test",
+                        "answer_to": "2222"
+                    },
+                    {
+                        "id": "id-1549206018-6579",
+                        "data": 1549206018,
+                        "name": "test@email.ru",
+                        "content": "test-test1",
+                        "answer_to": "2222"
+                    },
+                    {
+                        "id": "id-1549562264-7089",
+                        "data": 1549562264,
+                        "name": "test@email.ru",
+                        "content": "test-test1",
+                        "answer_to": "2222"
+                    },
+                    {
+                        "id": "id-1549562407-3502",
+                        "data": 1549562407,
+                        "name": "test@email.ru",
+                        "content": "test-test1",
+                        "answer_to": "2222"
                     }
                 ]
             },
@@ -63,7 +67,8 @@
                         "id": "id-1549203499-931",
                         "data": 1549203499,
                         "name": "test@email.ru",
-                        "content": "secondTest"
+                        "content": "secondTest",
+                        "answer_to": "id-1549203423-3429"
                     }
                 ]
             },
@@ -89,7 +94,8 @@
                         "id": "id-1551176354-3422",
                         "date": 1551176354,
                         "name": "test2@email.ru",
-                        "content": "BAAAAA"
+                        "content": "BAAAAA",
+                        "answer_to": "id-1551176321-952"
                     }
                 ]
             },
@@ -122,14 +128,14 @@
     "index": {
         "1111": "1111",
         "2222": "1111.2222",
-        "3333": "1111.2222.3333",
+        "3333": "1111.3333",
         "55556": "55556",
         "id-1549203423-3429": "id-1549203423-3429",
         "id-1549203499-931": "id-1549203423-3429.id-1549203499-931",
-        "id-1549203516-278": "1111.2222.id-1549203516-278",
-        "id-1549206018-6579": "1111.2222.id-1549206018-6579",
-        "id-1549562264-7089": "1111.2222.id-1549562264-7089",
-        "id-1549562407-3502": "1111.2222.id-1549562407-3502",
+        "id-1549203516-278": "1111.id-1549203516-278",
+        "id-1549206018-6579": "1111.id-1549206018-6579",
+        "id-1549562264-7089": "1111.id-1549562264-7089",
+        "id-1549562407-3502": "1111.id-1549562407-3502",
         "id-1551096418-1093": "id-1551096418-1093",
         "id-1551096999-3905": "id-1551096999-3905",
         "id-1551176321-952": "id-1551176321-952",

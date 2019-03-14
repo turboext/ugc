@@ -22,13 +22,18 @@ export interface IComments {
     comments: IComment[];
 }
 
+interface IPager {
+    limit: number;
+    total: number;
+    offset: number;
+}
+
 export interface IComment {
     id: string;
-    date: number;
-
+    answer_to?: string;
     name: string;
+    date: number;
     content: string;
-
     replies?: IComment[];
 }
 
@@ -80,6 +85,27 @@ export async function getComments(url: string): Promise<ICommentsStore> {
     }
 
     return JSON.parse(rawComments);
+}
+
+export async function getCommentsPage(
+    url: string, 
+    pageMeta: { limit: number, offset: number }
+): Promise<ICommentsStore & IPager> {
+    const store = await getComments(url)
+    const { limit, offset } = pageMeta;
+    const total = store.data.comments.length;
+    const startIndex = limit * offset;
+    const endIndex = (offset + 1) * limit;
+
+    return {
+        data: {
+            comments: store.data.comments.slice(startIndex, endIndex),
+        },
+        total,
+        offset,
+        limit,
+        index: store.index
+    };
 }
 
 function findReplyList(comments: ICommentsStore, parentCommentId?: string) {
