@@ -29,7 +29,7 @@ router.post('/', async (req: IRequest, res, next) => {
         return res.end();
     }
 
-    const pageUrl = req.query.ORIGIN_URL;
+    const pageUrl = req.query.ORIGINAL_URL;
 
     if (!pageUrl) {
         res.sendStatus(ResponseStatus.BAD_REQUEST);
