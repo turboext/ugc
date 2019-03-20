@@ -112,29 +112,22 @@ function findReplyList(comments: ICommentsStore, parentCommentId?: string) {
     parentCommentId = parentCommentId as string;
 
     const index = comments.index[parentCommentId];
-    let replies = comments.data.comments;
+    let rootComments = comments.data.comments;
 
     if (!index) {
-        return { replies, index: '' };
+        return { replies: rootComments, index: '' };
     }
 
-    const chunks = index.split('.');
+    // комментарии имею глубину 2, нам интересен id корневого комментария
+    const rootId = index.split('.')[0];
+    const rootComment = rootComments.find((c) => c.id === rootId);
 
-    // tslint:disable-next-line:prefer-for-of
-    for (let i = 0; i < chunks.length; i++) {
-        const commentToReplies = replies.find((c) => c.id === chunks[i]);
-
-        // Если нет нужного комментария,
-        // то выходим из поиска
-        if (!commentToReplies) {
-            break;
-        }
-
-        commentToReplies.replies = commentToReplies.replies || [];
-        replies = commentToReplies.replies;
+    // если вдруг такого нет - отдаем весь список
+    if (!rootComment) {
+        return { replies: rootComments, index };
     }
 
-    return { replies, index };
+    return { replies: rootComment.replies || [], index: rootId };
 }
 
 export async function setComment(
@@ -153,6 +146,7 @@ export async function setComment(
     const newId = `id-${date}-${Math.round(Math.random() * multiple)}`;
     const comment: IComment = {
         id: newId,
+        answer_to: parentCommentId,
         date,
         name: user.login,
         content: incomingComment.text
