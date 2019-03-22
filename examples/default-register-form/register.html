@@ -54,14 +54,14 @@
 
     function init() {
         // останавливаем отправку событий скролла наружу
-        bodyLockScroll.disableBodyScroll(document.documentElement);
+        bodyScrollLock.disableBodyScroll(document.documentElement);
 
         // отправляем высоту документа
         // окно авторизации на десктопах подстраивается под нее
         window.top.postMessage({
             action: 'document-height-known',
             value: document.documentElement.offsetHeight
-        });
+        }, '*');
 
         document.querySelector('.form__submit')
             .addEventListener('click', handlerFormSubmit);
