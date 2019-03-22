@@ -126,8 +126,9 @@ function findReplyList(comments: ICommentsStore, parentCommentId?: string) {
     if (!rootComment) {
         return { replies: rootComments, index };
     }
+    rootComment.replies = rootComment.replies || [];
 
-    return { replies: rootComment.replies || [], index: rootId };
+    return { replies: rootComment.replies, index: rootId };
 }
 
 export async function setComment(
