@@ -61,7 +61,7 @@
 
                 // отправляем высоту документа
                 // окно авторизации на десктопах подстраивается под нее
-                window.top.postMessage({
+                window.parent.postMessage({
                     action: 'document-height-known',
                     value: document.documentElement.offsetHeight
                 }, '*');
@@ -90,7 +90,7 @@
                             return;
                         }
 
-                        window.top.postMessage({
+                        window.parent.postMessage({
                             action: 'login',
                             login: body.login,
                             success: true
