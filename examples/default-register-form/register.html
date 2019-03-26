@@ -85,6 +85,11 @@
                 }
 
                 window.history.back();
+                window.parent.postMessage({
+                    action: 'login',
+                    login: body.login,
+                    success: true
+                }, '*');
             })
     }
 
