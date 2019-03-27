@@ -7,6 +7,10 @@ export const USER_ID_COOKIE = 'uid';
 export const withUser = async (req: IRequest, res: Response, next: NextFunction) => {
     const turboId = req.query.TURBO_ID;
 
+    if (!turboId) {
+        return next();
+    }
+
     const users = await getUsers();
 
     const user = users.find(
