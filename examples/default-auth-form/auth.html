@@ -265,6 +265,8 @@
                 </div>
             </form>
         </div>
+        <!-- Polyfill для fetch -->
+        <script src="https://yastatic.net/s3/turbo-static/_/_fetch_c1490ec961e084e635014275496c791b.js"></script>
         <script src="/ugc/examples/vendor/bodyScrollLock.js"></script>
         <script>
             window.APP = {};
@@ -274,7 +276,7 @@
             window.APP.TURBO_ID = '$TURBO_ID$';
 
             function submit(data) {
-                return fetch(`/auth/login?TURBO_ID=${window.APP.TURBO_ID}`, {
+                return fetch('/auth/login?TURBO_ID=' + window.APP.TURBO_ID, {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json',
