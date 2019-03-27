@@ -261,7 +261,7 @@
                 <button class="button form__submit" type="submit"><span class="button__label">Войти</span></button>
 
                 <div class="link-register">
-                    <a href="/auth/register/form?TURBO_ID=$TURBO_ID$">Регистрация</a>
+                    <a class="link" href="/auth/register/form?TURBO_ID=$TURBO_ID$">Регистрация</a>
                 </div>
             </form>
         </div>
@@ -299,6 +299,15 @@
 
                 document.querySelector('.form__submit')
                     .addEventListener('click', handlerFormSubmit);
+
+                document.querySelector('.link')
+                    .addEventListener('click', handleLinkClick);
+            }
+
+            function handleLinkClick(e) {
+                e.preventDefault();
+
+                location.replace(e.target.getAttribut('href'));
             }
 
             function handlerFormSubmit(e) {
