@@ -59,7 +59,7 @@ router.post('/register', async (req: IRequest, res: Response) => {
     const isUserAdded = await addUser(login, password);
     if (!isUserAdded) {
         res.status(ResponseStatus.CONFLICT);
-        res.send('Email already exist');
+        res.send('Email уже существует');
         return;
     }
 
@@ -92,7 +92,7 @@ router.post('/login', async (req: IRequest, res: Response, next: NextFunction) =
     if (!user || user.password !== password) {
         res.contentType('text/html');
         res.status(ResponseStatus.UNAUTHORIZED);
-        res.send('Wrong login or password');
+        res.send('Неверный логин или пароль');
         res.end();
         return;
     }

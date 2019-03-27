@@ -10,8 +10,9 @@ const DEFAULT_PAGE_OFFSET = 0;
 // Заглушка для комментариев
 router.get('/', async (req: IRequest, res, next) => {
     const pageUrl = req.query.ORIGINAL_URL;
-    const limit = parseInt(req.query.limit) || DEFAULT_PAGE_LIMIT;
-    const offset = parseInt(req.query.offset) || DEFAULT_PAGE_OFFSET;
+    const radix = 10;
+    const limit = parseInt(req.query.limit, radix) || DEFAULT_PAGE_LIMIT;
+    const offset = parseInt(req.query.offset, radix) || DEFAULT_PAGE_OFFSET;
 
     if (!pageUrl) {
         res.sendStatus(ResponseStatus.BAD_REQUEST);

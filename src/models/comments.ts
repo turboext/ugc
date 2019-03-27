@@ -91,9 +91,9 @@ export async function getComments(url: string): Promise<ICommentsStore> {
 
 export async function getCommentsPage(
     url: string,
-    pageMeta: { limit: number, offset: number }
+    pageMeta: { limit: number; offset: number }
 ): Promise<ICommentsStore & IPager> {
-    const store = await getComments(url)
+    const store = await getComments(url);
     const { limit, offset } = pageMeta;
     const total = store.data.comments.length;
     const startIndex = limit * offset;
@@ -114,7 +114,7 @@ function findReplyList(comments: ICommentsStore, parentCommentId?: string) {
     parentCommentId = parentCommentId as string;
 
     const index = comments.index[parentCommentId];
-    let rootComments = comments.data.comments;
+    const rootComments = comments.data.comments;
 
     if (!index) {
         return { replies: rootComments, index: '' };
