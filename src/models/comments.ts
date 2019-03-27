@@ -1,14 +1,16 @@
 import { resolve } from 'path';
 import {
     readFile as readFileCallback,
-    writeFile as writeFileCallback,
-    exists as existsCallback
+    exists as existsCallback,
 } from 'fs';
+
+import { outputFile } from 'fs-extra';
+
 import { promisify } from 'util';
 import { IUser } from './user';
 
 const readFile = promisify(readFileCallback);
-const writeFile = promisify(writeFileCallback);
+const writeFile = outputFile;
 const exists = promisify(existsCallback);
 
 const commentsRootPath = resolve(process.cwd(), 'src', 'data', 'comments');
@@ -88,7 +90,7 @@ export async function getComments(url: string): Promise<ICommentsStore> {
 }
 
 export async function getCommentsPage(
-    url: string, 
+    url: string,
     pageMeta: { limit: number, offset: number }
 ): Promise<ICommentsStore & IPager> {
     const store = await getComments(url)
