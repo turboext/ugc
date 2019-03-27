@@ -306,9 +306,24 @@
             function handlerFormSubmit(e) {
                 e.preventDefault();
 
+                var loginInput = document.getElementById('email');
+                var passwordInput = document.getElementById('password');
+
+                if (loginInput.value.trim() === '') {
+                    loginInput.classList.add('error');
+
+                    return;
+                }
+
+                if (passwordInput.value.trim() === '') {
+                    passwordInput.classList.add('error');
+
+                    return;
+                }
+
                 var body = {
-                    login: document.getElementById('email').value,
-                    password: document.getElementById('password').value
+                    login: loginInput.value,
+                    password: passwordInput.value
                 };
 
                 submit(body)
