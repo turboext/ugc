@@ -251,7 +251,7 @@
     </form>
 </div>
 <!-- Polyfill для fetch -->
-<script src="https://yastatic.net/s3/turbo-static/_/_promise_ba2f45079543082d09572f3f0658b089.js" ></script>
+<script src="https://yastatic.net/s3/turbo-static/_/_promise_ba2f45079543082d09572f3f0658b089.js"></script>
 <script src="https://yastatic.net/s3/turbo-static/_/_fetch_c1490ec961e084e635014275496c791b.js"></script>
 <script src="/ugc/examples/vendor/bodyScrollLock.js"></script>
 <script>
@@ -262,7 +262,7 @@
     window.APP.TURBO_ID = '$TURBO_ID$';
 
     function submit(data) {
-        return fetch(`/auth/register?TURBO_ID=${window.APP.TURBO_ID}`, {
+        return fetch('/auth/register?TURBO_ID=' + window.APP.TURBO_ID, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
@@ -312,7 +312,7 @@
         submit(body)
             .then(function(response) {
                 if (!response.ok) {
-                    response.text().then(text => {
+                    response.text().then(function() {
                         document.getElementById('error-message').innerText = text;
                     });
                     return;
