@@ -63,6 +63,23 @@ router.post('/register', async (req: IRequest, res: Response) => {
         return;
     }
 
+    const turboId = req.query.TURBO_ID;
+    const user = await getUserByLogin(login);
+
+    if (!user) {
+        res.contentType('text/html');
+        res.status(ResponseStatus.SERVER_ERROR);
+        res.send('User conflict');
+        res.end();
+        return;
+    }
+
+    if (user.turboId !== turboId) {
+        user.turboId = turboId;
+    }
+
+    setUser(user);
+
     res.status(ResponseStatus.OK);
     res.end();
 });
