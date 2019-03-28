@@ -312,7 +312,7 @@
         submit(body)
             .then(function(response) {
                 if (!response.ok) {
-                    response.text().then(function() {
+                    response.text().then(function(text) {
                         document.getElementById('error-message').innerText = text;
                     });
                     return;

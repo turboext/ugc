@@ -78,8 +78,6 @@ async function writeComments(normalizedUrl: string, comments: ICommentsStore) {
 }
 
 export async function getComments(url: string): Promise<ICommentsStore> {
-    url = normalizeUrl(url);
-
     const rawComments = await readComments(url);
 
     if (!rawComments) {
@@ -93,6 +91,8 @@ export async function getCommentsPage(
     url: string,
     pageMeta: { limit: number; offset: number }
 ): Promise<ICommentsStore & IPager> {
+    url = normalizeUrl(url);
+
     const store = await getComments(url);
     const { limit, offset } = pageMeta;
     const total = store.data.comments.length;
