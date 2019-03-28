@@ -4,6 +4,8 @@
 ## Примеры
 [Форма авторизации](http://master.turboext.net/auth/login/form)
 
+Настройка CORS в [nginx](https://github.com/turboext/ugc/blob/master/examples/nginx/config)
+
 ## Разработка
 ```bash
 git clone git@github.com:turboext/ugc.git
