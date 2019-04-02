@@ -264,17 +264,17 @@
 
             <h2 class="header_2">Вход с помощью соцсетей</h2>
             <div class="row">
-                <a href="#" class="button button_circle button_social button_type_vk">
+                <a href="#" class="button button_circle button_social button_type_vk" data-type="vk">
                     <div class="icon">
                         <svg class="icon__svg"><use xlink:href="#vk"></use></svg>
                     </div>
                 </a>
-                <a href="#" class="button button_circle button_social button_type_fb">
+                <a href="#" class="button button_circle button_social button_type_fb" data-type="fb">
                     <div class="icon">
                         <svg class="icon__svg"><use xlink:href="#fb"></use></svg>
                     </div>
                 </a>
-                <a href="#" class="button button_circle button_social button_type_google">
+                <a href="#" class="button button_circle button_social button_type_google" data-type="google">
                     <div class="icon">
                         <svg class="icon__svg"><use xlink:href="#google"></use></svg>
                     </div>
@@ -304,6 +304,29 @@
             function init() {
                 document.querySelector('.form__submit')
                     .addEventListener('click', handlerFormSubmit);
+
+                document.querySelectorAll('.button_social').forEach(function(el) {
+                    el.addEventListener('click', handlerSocialClick);
+                });
+            }
+
+            function handlerSocialClick(e) {
+                e.preventDefault();
+
+                var type = e.target.dataset['type'];
+
+                var child = window.open('/examples/default-auth-form/oauth-stub.html');
+                window.addEventListener('message', function(e) {
+                    if (e.data.login) {
+                        child.close();
+
+                        window.parent.postMessage({
+                            action: 'login',
+                            login: e.data.login,
+                            success: true
+                        }, '*');
+                    }
+                });
             }
 
             function handlerFormSubmit(e) {
