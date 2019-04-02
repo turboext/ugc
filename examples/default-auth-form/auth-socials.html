@@ -315,7 +315,7 @@
 
                 var type = e.target.dataset.type;
 
-                var child = window.open('/examples/default-auth-form/oauth-stub.html?type=' + (type || 'vk'));
+                var child = window.open('/ugc/examples/default-auth-form/oauth-stub.html?type=' + (type || 'vk'));
                 window.addEventListener('message', function(e) {
                     if (e.data.login) {
                         child.close();
