@@ -305,7 +305,7 @@
                 document.querySelector('.form__submit')
                     .addEventListener('click', handlerFormSubmit);
 
-                document.querySelectorAll('.button_social').forEach(function(element) {
+                Array.prototype.slice.call(document.querySelectorAll('.button_social')).forEach(function(element) {
                     element.addEventListener('click', handlerSocialClick);
                 });
             }
