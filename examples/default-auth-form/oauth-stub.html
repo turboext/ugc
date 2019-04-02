@@ -1,0 +1,13 @@
+<html>
+    <head>
+        <title>Стаб для примера OAuth в Turbo</title>
+    </head>
+    <body>
+        <script>
+            var parent = window.opener;
+            parent.postMessage({
+                login: 'test@example.com'
+            }, '*');
+        </script>
+    </body>
+</html>
