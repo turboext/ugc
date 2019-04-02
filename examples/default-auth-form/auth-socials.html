@@ -305,17 +305,17 @@
                 document.querySelector('.form__submit')
                     .addEventListener('click', handlerFormSubmit);
 
-                document.querySelectorAll('.button_social').forEach(function(el) {
-                    el.addEventListener('click', handlerSocialClick);
+                document.querySelectorAll('.button_social').forEach(function(element) {
+                    element.addEventListener('click', handlerSocialClick);
                 });
             }
 
             function handlerSocialClick(e) {
                 e.preventDefault();
 
-                var type = e.target.dataset['type'];
+                var type = e.target.dataset.type;
 
-                var child = window.open('/examples/default-auth-form/oauth-stub.html');
+                var child = window.open('/examples/default-auth-form/oauth-stub.html?type=' + (type || 'vk'));
                 window.addEventListener('message', function(e) {
                     if (e.data.login) {
                         child.close();
