@@ -13,14 +13,9 @@ if ($post_id === 0) {
     wp_die('Cannot find original post');
 }
 
-// Получение общего количества комментариев к статье.
-$total_comments_count = get_comments_number($post_id);
-
 // Получение списка комментариев из WP.
 $comments = get_comments(array(
     'post_id' => $post_id,
-    'offset' => $offset,
-    'number' => $limit,
     'hierarchical' => 'threaded',
     'order' => 'ASC'
 ));
@@ -52,8 +47,8 @@ function prepareComment($comment, $options = array()) {
 echo wp_json_encode(array(
     'offset' => $offset,
     'limit' => $limit,
-    'total' => $total_comments_count,
+    'total' => count($comments),
     'comments' => array_values(array_map(function($comment) {
         return prepareComment($comment, array('replies' => true));
-    }, $comments))
+    }, array_slice($comments, $offset, $limit)))
 ));
