@@ -34,6 +34,7 @@
     "@types/fs-extra": "5.0.5",
     "@types/morgan": "1.7.35",
     "nodemon": "1.18.9",
+    "tslint": "5.17.0",
     "typescript": "3.2.4"
   }
 }

@@ -96,12 +96,11 @@ export async function getCommentsPage(
     const store = await getComments(url);
     const { limit, offset } = pageMeta;
     const total = store.data.comments.length;
-    const startIndex = limit * offset;
-    const endIndex = (offset + 1) * limit;
+    const endIndex = offset + limit;
 
     return {
         data: {
-            comments: store.data.comments.slice(startIndex, endIndex),
+            comments: store.data.comments.slice(offset, endIndex),
         },
         total,
         offset,
