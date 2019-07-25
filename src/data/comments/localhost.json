@@ -4,12 +4,14 @@
             {
                 "name": "Homer",
                 "date": 1536210000,
+                "avatar": "https://avatars.mds.yandex.net/get-turbo/1591054/4c5be356ba5f84cbe9da2dc436b8c557/orig",
                 "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
                 "id": "1111",
                 "replies": [
                     {
                         "name": "Moe",
                         "date": 1536210000,
+                        "avatar": "https://avatars.mds.yandex.net/get-turbo/1360906/4c94ac0fd46bd849cf5b12bc8fe32a2c/orig",
                         "content": "Phasellus interdum feugiat dui id facilisis.",
                         "id": "2222",
                         "answer_to": "1111"
@@ -24,6 +26,7 @@
                     {
                         "id": "id-1549203516-278",
                         "date": 1549203516,
+                        "avatar": "https://avatars.mds.yandex.net/get-turbo/1527170/2f1891c61a5b290ec39a348becf488a2/orig",
                         "name": "test@email.ru",
                         "content": "test-test",
                         "answer_to": "2222"
@@ -33,12 +36,14 @@
                         "date": 1549206018,
                         "name": "test@email.ru",
                         "content": "test-test1",
+                        "avatar": "https://avatars.mds.yandex.net/get-turbo/1688216/3695958a7552da36eef301a259ef3101/orig",
                         "answer_to": "2222"
                     },
                     {
                         "id": "id-1549562264-7089",
                         "date": 1549562264,
                         "name": "test@email.ru",
+                        "avatar": "https://avatars.mds.yandex.net/get-turbo/1527170/2f1891c61a5b290ec39a348becf488a2/orig",
                         "content": "test-test1",
                         "answer_to": "2222"
                     },
@@ -46,6 +51,7 @@
                         "id": "id-1549562407-3502",
                         "date": 1549562407,
                         "name": "test@email.ru",
+                        "avatar": "https://avatars.mds.yandex.net/get-turbo/1360906/4c94ac0fd46bd849cf5b12bc8fe32a2c/orig",
                         "content": "test-test1",
                         "answer_to": "2222"
                     },
@@ -53,6 +59,7 @@
                         "id": "5c8b4ba0ca3859a40c01e359",
                         "name": "Waters Pena",
                         "date": 1536210000,
+                        "avatar": "https://avatars.mds.yandex.net/get-turbo/1591054/4c5be356ba5f84cbe9da2dc436b8c557/orig",
                         "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
                         "answer_to": "1111"
                     },
@@ -68,12 +75,14 @@
                         "name": "Bettie Mcpherson",
                         "date": 1536210000,
                         "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+                        "avatar": "https://avatars.mds.yandex.net/get-turbo/1688216/3695958a7552da36eef301a259ef3101/orig",
                         "answer_to": "1111"
                     },
                     {
                         "id": "5c8b4ba0eeb4a88c624255c1",
                         "name": "Trevino Sheppard",
                         "date": 1536210000,
+                        "avatar": "https://avatars.mds.yandex.net/get-turbo/1527170/2f1891c61a5b290ec39a348becf488a2/orig",
                         "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
                         "answer_to": "1111"
                     },
@@ -81,6 +90,7 @@
                         "id": "5c8b4ba019e1240e45438034",
                         "name": "Mcconnell Weeks",
                         "date": 1536210000,
+                        "avatar": "https://avatars.mds.yandex.net/get-turbo/1360906/4c94ac0fd46bd849cf5b12bc8fe32a2c/orig",
                         "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
                         "answer_to": "1111"
                     },
@@ -95,6 +105,7 @@
                         "id": "5c8b4ba011835c258b2e7b50",
                         "name": "Joseph Gilliam",
                         "date": 1536210000,
+                        "avatar": "https://avatars.mds.yandex.net/get-turbo/1591054/4c5be356ba5f84cbe9da2dc436b8c557/orig",
                         "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
                         "answer_to": "1111"
                     },
@@ -116,6 +127,7 @@
                         "id": "5c8b4ba0a7a360cc07d71fbd",
                         "name": "Maryellen Rosales",
                         "date": 1536210000,
+                        "avatar": "https://avatars.mds.yandex.net/get-turbo/1527170/2f1891c61a5b290ec39a348becf488a2/orig",
                         "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
                         "answer_to": "1111"
                     },
@@ -123,6 +135,7 @@
                         "id": "5c8b4ba01f1d3f7e50dd8f20",
                         "name": "Marilyn Fisher",
                         "date": 1536210000,
+                        "avatar": "https://avatars.mds.yandex.net/get-turbo/1360906/4c94ac0fd46bd849cf5b12bc8fe32a2c/orig",
                         "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
                         "answer_to": "1111"
                     },
@@ -131,6 +144,7 @@
                         "name": "Sparks Tyson",
                         "date": 1536210000,
                         "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+                        "avatar": "https://avatars.mds.yandex.net/get-turbo/1688216/3695958a7552da36eef301a259ef3101/orig",
                         "answer_to": "1111"
                     },
                     {
@@ -144,6 +158,7 @@
                         "id": "5c8b4ba0075064f9fe7c5c6a",
                         "name": "Callahan Hancock",
                         "date": 1536210000,
+                        "avatar": "https://avatars.mds.yandex.net/get-turbo/1591054/4c5be356ba5f84cbe9da2dc436b8c557/orig",
                         "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
                         "answer_to": "1111"
                     },
@@ -151,6 +166,7 @@
                         "id": "5c8b4ba060808fdf480c3e6a",
                         "name": "Virgie Goodman",
                         "date": 1536210000,
+                        "avatar": "https://avatars.mds.yandex.net/get-turbo/1527170/2f1891c61a5b290ec39a348becf488a2/orig",
                         "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
                         "answer_to": "1111"
                     },
@@ -158,6 +174,7 @@
                         "id": "5c8b4ba0b1a3f29eb39e7831",
                         "name": "Knowles Dickerson",
                         "date": 1536210000,
+                        "avatar": "https://avatars.mds.yandex.net/get-turbo/1360906/4c94ac0fd46bd849cf5b12bc8fe32a2c/orig",
                         "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
                         "answer_to": "1111"
                     }
@@ -166,6 +183,7 @@
             {
                 "name": "Homer",
                 "date": 1536210000,
+                "avatar": "https://avatars.mds.yandex.net/get-turbo/1360906/4c94ac0fd46bd849cf5b12bc8fe32a2c/orig",
                 "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
                 "id": "55556"
             },
@@ -173,12 +191,14 @@
                 "id": "id-1549203423-3429",
                 "date": 1549203423,
                 "name": "test@email.ru",
+                "avatar": "https://avatars.mds.yandex.net/get-turbo/1591054/4c5be356ba5f84cbe9da2dc436b8c557/orig",
                 "content": "firstTest",
                 "replies": [
                     {
                         "id": "id-1549203499-931",
                         "date": 1549203499,
                         "name": "test@email.ru",
+                        "avatar": "https://avatars.mds.yandex.net/get-turbo/1527170/2f1891c61a5b290ec39a348becf488a2/orig",
                         "content": "secondTest",
                         "answer_to": "id-1549203423-3429"
                     }
@@ -187,6 +207,7 @@
             {
                 "id": "id-1551096418-1093",
                 "date": 1551096418,
+                "avatar": "https://avatars.mds.yandex.net/get-turbo/1360906/4c94ac0fd46bd849cf5b12bc8fe32a2c/orig",
                 "name": "test@email.ru",
                 "content": "HELLO!!!!"
             },
@@ -206,6 +227,7 @@
                         "id": "id-1551176354-3422",
                         "date": 1551176354,
                         "name": "test2@email.ru",
+                        "avatar": "https://avatars.mds.yandex.net/get-turbo/1591054/4c5be356ba5f84cbe9da2dc436b8c557/orig",
                         "content": "BAAAAA",
                         "answer_to": "id-1551176321-952"
                     }
@@ -215,17 +237,20 @@
                 "id": "id-1551176371-74",
                 "date": 1551176371,
                 "name": "test2@email.ru",
+                "avatar": "https://avatars.mds.yandex.net/get-turbo/1527170/2f1891c61a5b290ec39a348becf488a2/orig",
                 "content": "LALALA"
             },
             {
                 "id": "id-1551187205-9617",
                 "date": 1551187205,
                 "name": "test@email.ru",
+                "avatar": "https://avatars.mds.yandex.net/get-turbo/1688216/3695958a7552da36eef301a259ef3101/orig",
                 "content": "I'm back!"
             },
             {
                 "id": "id-1551202344-4333",
                 "date": 1551202344,
+                "avatar": "https://avatars.mds.yandex.net/get-turbo/1360906/4c94ac0fd46bd849cf5b12bc8fe32a2c/orig",
                 "name": "test@email.ru",
                 "content": "HISTORY AKJSDAKSJD"
             },
@@ -233,12 +258,14 @@
                 "id": "id-1551381323-8287",
                 "date": 1551381323,
                 "name": "artur@example.com",
+                "avatar": "https://avatars.mds.yandex.net/get-turbo/1591054/4c5be356ba5f84cbe9da2dc436b8c557/orig",
                 "content": "REGISTERED"
             },
             {
                 "id": "5c8b5e294338ef310a07a8b6",
                 "name": "Rosemarie Curtis",
                 "date": 1536210000,
+                "avatar": "https://avatars.mds.yandex.net/get-turbo/1527170/2f1891c61a5b290ec39a348becf488a2/orig",
                 "content": "ipsum tempor nostrud adipisicing nostrud anim fugiat quis officia ex consectetur ipsum sit occaecat incididunt occaecat exercitation ipsum est aliqua",
                 "replies": [
                     {
@@ -253,6 +280,7 @@
                         "id": "5c8b5e291e09fa3d53455af9",
                         "name": "Maxine Roman",
                         "date": 1536210000,
+                        "avatar": "https://avatars.mds.yandex.net/get-turbo/1688216/3695958a7552da36eef301a259ef3101/orig",
                         "content": "irure nisi qui amet duis adipisicing enim cupidatat aliquip labore officia cillum eiusmod cillum enim commodo cillum aute eu deserunt"
                     },
                     {
@@ -260,6 +288,7 @@
                         "id": "5c8b5e298f57921ed6177ee9",
                         "name": "Irma Mcconnell",
                         "date": 1536210000,
+                        "avatar": "https://avatars.mds.yandex.net/get-turbo/1360906/4c94ac0fd46bd849cf5b12bc8fe32a2c/orig",
                         "content": "mollit veniam incididunt mollit tempor et eiusmod nisi velit exercitation et cillum laboris minim mollit consectetur do sunt aute eiusmod"
                     }
                 ]
@@ -275,6 +304,7 @@
                         "id": "5c8b5e29cb0192c44316f66e",
                         "name": "Walsh Gilbert",
                         "date": 1536210000,
+                        "avatar": "https://avatars.mds.yandex.net/get-turbo/1591054/4c5be356ba5f84cbe9da2dc436b8c557/orig",
                         "content": "pariatur cupidatat eu non duis aliqua aliqua veniam aute non incididunt sint commodo commodo occaecat enim ipsum culpa ipsum aliquip"
                     },
                     {
@@ -282,6 +312,7 @@
                         "id": "5c8b5e293203dfa720396aa7",
                         "name": "Kidd Duran",
                         "date": 1536210000,
+                        "avatar": "https://avatars.mds.yandex.net/get-turbo/1360906/4c94ac0fd46bd849cf5b12bc8fe32a2c/orig",
                         "content": "pariatur ipsum ex non ullamco id laboris sunt in sit dolor amet do aute aliquip dolor tempor ut pariatur sunt"
                     },
                     {
@@ -289,6 +320,7 @@
                         "id": "5c8b5e29cfe332ca689a45fb",
                         "name": "Krista Bender",
                         "date": 1536210000,
+                        "avatar": "https://avatars.mds.yandex.net/get-turbo/1527170/2f1891c61a5b290ec39a348becf488a2/orig",
                         "content": "exercitation Lorem enim pariatur sit sunt eiusmod qui pariatur sint minim est officia eu reprehenderit tempor sint ullamco id minim"
                     }
                 ]
@@ -297,6 +329,7 @@
                 "id": "5c8b5e294e32816f42786f3b",
                 "name": "Mara Solomon",
                 "date": 1536210000,
+                "avatar": "https://avatars.mds.yandex.net/get-turbo/1688216/3695958a7552da36eef301a259ef3101/orig",
                 "content": "amet veniam in nisi exercitation id exercitation Lorem culpa cillum amet consectetur ullamco officia esse proident mollit minim fugiat officia",
                 "replies": [
                     {
@@ -304,6 +337,7 @@
                         "id": "5c8b5e299469176238119a82",
                         "name": "Stanton Juarez",
                         "date": 1536210000,
+                        "avatar": "https://avatars.mds.yandex.net/get-turbo/1360906/4c94ac0fd46bd849cf5b12bc8fe32a2c/orig",
                         "content": "proident tempor quis esse occaecat fugiat minim esse nulla mollit velit commodo cupidatat reprehenderit ex ipsum consequat veniam voluptate occaecat"
                     },
                     {
@@ -318,6 +352,7 @@
                         "id": "5c8b5e29d5071b1726ae40ff",
                         "name": "Nita Hunt",
                         "date": 1536210000,
+                        "avatar": "https://avatars.mds.yandex.net/get-turbo/1591054/4c5be356ba5f84cbe9da2dc436b8c557/orig",
                         "content": "dolor nostrud fugiat commodo nisi in deserunt enim esse laboris et et dolor deserunt voluptate excepteur eu anim consectetur deserunt"
                     }
                 ]
@@ -333,6 +368,7 @@
                         "id": "5c8b5e294ee2f11e1dfedc5f",
                         "name": "Nora Michael",
                         "date": 1536210000,
+                        "avatar": "https://avatars.mds.yandex.net/get-turbo/1527170/2f1891c61a5b290ec39a348becf488a2/orig",
                         "content": "aute ex sint labore cupidatat ipsum do proident velit reprehenderit ipsum ex quis nisi laborum nostrud est mollit qui Lorem"
                     },
                     {
@@ -340,6 +376,7 @@
                         "id": "5c8b5e298778b60a0c760380",
                         "name": "Strong Elliott",
                         "date": 1536210000,
+                        "avatar": "https://avatars.mds.yandex.net/get-turbo/1360906/4c94ac0fd46bd849cf5b12bc8fe32a2c/orig",
                         "content": "minim dolore Lorem sunt id ullamco incididunt in aliqua occaecat enim sunt nulla laboris cillum nulla dolore esse labore sint"
                     }
                 ]
@@ -348,6 +385,7 @@
                 "id": "5c8b5e291d6901c3beb3835d",
                 "name": "Alissa Oconnor",
                 "date": 1536210000,
+                "avatar": "https://avatars.mds.yandex.net/get-turbo/1527170/2f1891c61a5b290ec39a348becf488a2/orig",
                 "content": "dolor anim laboris culpa nostrud irure veniam non culpa excepteur commodo minim consectetur aliqua veniam laboris tempor sint ea cupidatat",
                 "replies": [
                     {
@@ -355,6 +393,7 @@
                         "id": "5c8b5e29c89fe6d459608212",
                         "name": "Peters Henry",
                         "date": 1536210000,
+                        "avatar": "https://avatars.mds.yandex.net/get-turbo/1360906/4c94ac0fd46bd849cf5b12bc8fe32a2c/orig",
                         "content": "exercitation cupidatat tempor ullamco qui et et qui irure ex adipisicing ea officia nisi anim eu eiusmod anim consequat dolor"
                     },
                     {
@@ -362,6 +401,7 @@
                         "id": "5c8b5e29c3221df1f2992993",
                         "name": "Rodgers Chavez",
                         "date": 1536210000,
+                        "avatar": "https://avatars.mds.yandex.net/get-turbo/1688216/3695958a7552da36eef301a259ef3101/orig",
                         "content": "magna proident minim fugiat sit quis nostrud duis sit cupidatat anim culpa consectetur qui et ex veniam proident enim sint"
                     },
                     {
@@ -369,6 +409,7 @@
                         "id": "5c8b5e295ba769282504c07d",
                         "name": "Julie Flowers",
                         "date": 1536210000,
+                        "avatar": "https://avatars.mds.yandex.net/get-turbo/1591054/4c5be356ba5f84cbe9da2dc436b8c557/orig",
                         "content": "commodo duis pariatur sint cillum eiusmod ipsum esse id exercitation ea ad duis sit ullamco magna cillum velit id est"
                     }
                 ]
@@ -384,6 +425,7 @@
                         "id": "5c8b5e29e58910d48ea6b720",
                         "name": "Deanne Cooke",
                         "date": 1536210000,
+                        "avatar": "https://avatars.mds.yandex.net/get-turbo/1360906/4c94ac0fd46bd849cf5b12bc8fe32a2c/orig",
                         "content": "magna aute ipsum nostrud elit do ipsum cupidatat ex irure elit elit labore officia ea aliqua culpa ex nisi Lorem"
                     },
                     {
@@ -398,6 +440,7 @@
                         "id": "5c8b5e292b0025a9a5fde890",
                         "name": "Elliott Osborn",
                         "date": 1536210000,
+                        "avatar": "https://avatars.mds.yandex.net/get-turbo/1591054/4c5be356ba5f84cbe9da2dc436b8c557/orig",
                         "content": "pariatur dolore ea fugiat proident sint dolor occaecat eu qui anim deserunt esse sit officia ullamco pariatur sunt commodo consectetur"
                     }
                 ]
@@ -406,6 +449,7 @@
                 "id": "5c8b5e294d29396a684a68d5",
                 "name": "Shawn Blanchard",
                 "date": 1536210000,
+                "avatar": "https://avatars.mds.yandex.net/get-turbo/1591054/4c5be356ba5f84cbe9da2dc436b8c557/orig",
                 "content": "amet non ex cupidatat ipsum sunt excepteur quis aliquip Lorem consequat esse incididunt id dolore sunt eiusmod amet irure ipsum",
                 "replies": [
                     {
@@ -413,6 +457,7 @@
                         "id": "5c8b5e29c5518fce926916f4",
                         "name": "Robles Wooten",
                         "date": 1536210000,
+                        "avatar": "https://avatars.mds.yandex.net/get-turbo/1527170/2f1891c61a5b290ec39a348becf488a2/orig",
                         "content": "elit id et consequat nulla Lorem elit cupidatat pariatur deserunt reprehenderit occaecat ad nostrud non exercitation est ut mollit dolore"
                     },
                     {
@@ -420,6 +465,7 @@
                         "id": "5c8b5e29bae09eb0f2b310e5",
                         "name": "Stacy Middleton",
                         "date": 1536210000,
+                        "avatar": "https://avatars.mds.yandex.net/get-turbo/1360906/4c94ac0fd46bd849cf5b12bc8fe32a2c/orig",
                         "content": "occaecat pariatur laboris pariatur ex cupidatat aliqua ipsum cupidatat aliquip excepteur proident commodo magna sint ex consectetur voluptate occaecat deserunt"
                     }
                 ]
@@ -428,6 +474,7 @@
                 "id": "5c8b5e29b5f6ba7acf3815fa",
                 "name": "Vincent Barber",
                 "date": 1536210000,
+                "avatar": "https://avatars.mds.yandex.net/get-turbo/1688216/3695958a7552da36eef301a259ef3101/orig",
                 "content": "magna eiusmod veniam nisi cillum incididunt excepteur Lorem ex esse magna fugiat excepteur enim dolore fugiat eu pariatur commodo adipisicing",
                 "replies": [
                     {
@@ -442,6 +489,7 @@
                         "id": "5c8b5e29fb1e611ca3b046ca",
                         "name": "Castro Hyde",
                         "date": 1536210000,
+                        "avatar": "https://avatars.mds.yandex.net/get-turbo/1527170/2f1891c61a5b290ec39a348becf488a2/orig",
                         "content": "Lorem ipsum labore amet aliquip esse in cillum in dolore laborum aute dolore magna qui id esse nostrud ea fugiat"
                     }
                 ]
@@ -450,6 +498,7 @@
                 "id": "5c8b5e299fb8c6d6a88285ff",
                 "name": "Cole Franks",
                 "date": 1536210000,
+                "avatar": "https://avatars.mds.yandex.net/get-turbo/1591054/4c5be356ba5f84cbe9da2dc436b8c557/orig",
                 "content": "ea dolor mollit culpa anim proident aliquip occaecat laboris in cupidatat ullamco incididunt eu magna Lorem non minim in tempor",
                 "replies": [
                     {
@@ -457,6 +506,7 @@
                         "id": "5c8b5e29bb497581ecbe7b10",
                         "name": "Adams Humphrey",
                         "date": 1536210000,
+                        "avatar": "https://avatars.mds.yandex.net/get-turbo/1360906/4c94ac0fd46bd849cf5b12bc8fe32a2c/orig",
                         "content": "ut est aliqua laborum do cupidatat dolor labore ea dolor voluptate consequat officia nisi velit tempor duis amet dolor consequat"
                     },
                     {
@@ -464,6 +514,7 @@
                         "id": "5c8b5e292c56c838c1150879",
                         "name": "Winifred Griffin",
                         "date": 1536210000,
+                        "avatar": "https://avatars.mds.yandex.net/get-turbo/1688216/3695958a7552da36eef301a259ef3101/orig",
                         "content": "in cillum eiusmod consectetur nostrud officia dolor est elit esse pariatur dolore mollit eiusmod qui adipisicing fugiat adipisicing do adipisicing"
                     }
                 ]
@@ -472,6 +523,7 @@
                 "id": "5c8b5e291c2f7934803bba7b",
                 "name": "Hood Adkins",
                 "date": 1536210000,
+                "avatar": "https://avatars.mds.yandex.net/get-turbo/1591054/4c5be356ba5f84cbe9da2dc436b8c557/orig",
                 "content": "nulla eiusmod commodo amet nisi cupidatat pariatur ipsum sunt ut non ullamco voluptate aliquip exercitation excepteur in adipisicing voluptate eu",
                 "replies": [
                     {
@@ -479,6 +531,7 @@
                         "id": "5c8b5e2998b3114e85fc6e36",
                         "name": "Burch Richard",
                         "date": 1536210000,
+                        "avatar": "https://avatars.mds.yandex.net/get-turbo/1527170/2f1891c61a5b290ec39a348becf488a2/orig",
                         "content": "do non eu nisi velit adipisicing Lorem sit fugiat tempor esse pariatur fugiat ea aliqua incididunt pariatur est sint eu"
                     },
                     {
@@ -486,6 +539,7 @@
                         "id": "5c8b5e29b44c59e04619d275",
                         "name": "Stafford Larson",
                         "date": 1536210000,
+                        "avatar": "https://avatars.mds.yandex.net/get-turbo/1360906/4c94ac0fd46bd849cf5b12bc8fe32a2c/orig",
                         "content": "eu do sint reprehenderit id reprehenderit labore minim elit cupidatat tempor labore laboris mollit duis esse proident nostrud officia reprehenderit"
                     }
                 ]
@@ -501,6 +555,7 @@
                         "id": "5c8b5e295052f6089c2997e5",
                         "name": "Jayne Jackson",
                         "date": 1536210000,
+                        "avatar": "https://avatars.mds.yandex.net/get-turbo/1591054/4c5be356ba5f84cbe9da2dc436b8c557/orig",
                         "content": "laborum aliquip consectetur eiusmod et nulla fugiat ut aliqua labore Lorem deserunt elit id et culpa cupidatat ut id sint"
                     },
                     {
@@ -516,6 +571,7 @@
                 "id": "5c8b5e298771710341acc5cf",
                 "name": "Alfreda Boyd",
                 "date": 1536210000,
+                "avatar": "https://avatars.mds.yandex.net/get-turbo/1360906/4c94ac0fd46bd849cf5b12bc8fe32a2c/orig",
                 "content": "esse reprehenderit elit dolore labore tempor proident id pariatur nulla laboris exercitation eu voluptate nostrud est non exercitation fugiat cillum",
                 "replies": [
                     {
@@ -523,6 +579,7 @@
                         "id": "5c8b5e29b763a0bae434af3b",
                         "name": "Allison Rodriguez",
                         "date": 1536210000,
+                        "avatar": "https://avatars.mds.yandex.net/get-turbo/1688216/3695958a7552da36eef301a259ef3101/orig",
                         "content": "sit magna ad cupidatat aliqua veniam Lorem nulla deserunt nulla adipisicing labore aliqua est commodo voluptate esse non nisi laborum"
                     },
                     {
@@ -530,6 +587,7 @@
                         "id": "5c8b5e29511eb54512f1d0a2",
                         "name": "Trisha Acevedo",
                         "date": 1536210000,
+                        "avatar": "https://avatars.mds.yandex.net/get-turbo/1527170/2f1891c61a5b290ec39a348becf488a2/orig",
                         "content": "amet qui minim cupidatat Lorem laboris non consequat Lorem id exercitation id do Lorem ut ea cupidatat non aliquip magna"
                     }
                 ]
@@ -538,6 +596,7 @@
                 "id": "5c8b5e2983a309329577312e",
                 "name": "Bentley Golden",
                 "date": 1536210000,
+                "avatar": "https://avatars.mds.yandex.net/get-turbo/1360906/4c94ac0fd46bd849cf5b12bc8fe32a2c/orig",
                 "content": "sunt eu aute non laboris aliquip cupidatat anim sunt nulla elit veniam aliquip ullamco ullamco aute occaecat id excepteur ullamco",
                 "replies": [
                     {
@@ -552,6 +611,7 @@
                         "id": "5c8b5e29755af7602defe9d3",
                         "name": "Emilia Warren",
                         "date": 1536210000,
+                        "avatar": "https://avatars.mds.yandex.net/get-turbo/1527170/2f1891c61a5b290ec39a348becf488a2/orig",
                         "content": "pariatur irure exercitation ad laborum officia nostrud ipsum sunt in id et exercitation anim reprehenderit ea anim cillum enim quis"
                     },
                     {
@@ -559,6 +619,7 @@
                         "id": "5c8b5e29bc1ea5f954dc76e6",
                         "name": "Bowman Campos",
                         "date": 1536210000,
+                        "avatar": "https://avatars.mds.yandex.net/get-turbo/1591054/4c5be356ba5f84cbe9da2dc436b8c557/orig",
                         "content": "dolore anim cillum eu labore est quis sint nostrud laboris dolore qui minim cupidatat aute ea exercitation incididunt aute exercitation"
                     }
                 ]
@@ -567,6 +628,7 @@
                 "id": "5c8b5e292719991a4f39ada3",
                 "name": "Norton Keller",
                 "date": 1536210000,
+                "avatar": "https://avatars.mds.yandex.net/get-turbo/1527170/2f1891c61a5b290ec39a348becf488a2/orig",
                 "content": "ex ea aliqua enim amet qui duis consectetur mollit quis nisi reprehenderit amet consectetur culpa ea esse minim consequat esse",
                 "replies": [
                     {
@@ -581,6 +643,7 @@
                         "id": "5c8b5e2996696d0197066bf8",
                         "name": "Bryan Yates",
                         "date": 1536210000,
+                        "avatar": "https://avatars.mds.yandex.net/get-turbo/1688216/3695958a7552da36eef301a259ef3101/orig",
                         "content": "esse laboris laboris sunt anim dolor cupidatat qui anim non anim cillum est excepteur nulla tempor sunt labore mollit labore"
                     },
                     {
@@ -588,6 +651,7 @@
                         "id": "5c8b5e29b3a9ecfed7110467",
                         "name": "Lou Daniels",
                         "date": 1536210000,
+                        "avatar": "https://avatars.mds.yandex.net/get-turbo/1360906/4c94ac0fd46bd849cf5b12bc8fe32a2c/orig",
                         "content": "adipisicing labore id id laboris sunt deserunt laboris ex irure mollit nulla cillum nulla sit duis cillum occaecat minim cupidatat"
                     }
                 ]
@@ -596,6 +660,7 @@
                 "id": "5c8b5e29194ea56ee9535b66",
                 "name": "Melody Haney",
                 "date": 1536210000,
+                "avatar": "https://avatars.mds.yandex.net/get-turbo/1591054/4c5be356ba5f84cbe9da2dc436b8c557/orig",
                 "content": "elit ullamco cillum eu sunt proident veniam non velit culpa sunt reprehenderit culpa magna adipisicing ea et ex mollit tempor",
                 "replies": [
                     {
@@ -610,6 +675,7 @@
                         "id": "5c8b5e293251ba943ccbed7f",
                         "name": "Navarro Black",
                         "date": 1536210000,
+                        "avatar": "https://avatars.mds.yandex.net/get-turbo/1360906/4c94ac0fd46bd849cf5b12bc8fe32a2c/orig",
                         "content": "mollit ea culpa sit nisi excepteur ea eiusmod fugiat sunt exercitation minim laboris ipsum esse qui qui velit proident fugiat"
                     }
                 ]
@@ -618,6 +684,7 @@
                 "id": "5c8b5e29240ab03a1519a0ee",
                 "name": "Tamra Porter",
                 "date": 1536210000,
+                "avatar": "https://avatars.mds.yandex.net/get-turbo/1688216/3695958a7552da36eef301a259ef3101/orig",
                 "content": "enim consectetur eiusmod qui adipisicing sunt veniam exercitation eu commodo proident nisi elit dolor irure Lorem velit fugiat magna consequat",
                 "replies": [
                     {
@@ -632,6 +699,7 @@
                         "id": "5c8b5e2958d034f406533937",
                         "name": "Dennis Ferrell",
                         "date": 1536210000,
+                        "avatar": "https://avatars.mds.yandex.net/get-turbo/1527170/2f1891c61a5b290ec39a348becf488a2/orig",
                         "content": "aliqua ea amet et do ut sint magna mollit consectetur cupidatat labore aute cillum ullamco reprehenderit qui aute amet magna"
                     },
                     {
@@ -639,6 +707,7 @@
                         "id": "5c8b5e29706754a94842a387",
                         "name": "Henson Hahn",
                         "date": 1536210000,
+                        "avatar": "https://avatars.mds.yandex.net/get-turbo/1591054/4c5be356ba5f84cbe9da2dc436b8c557/orig",
                         "content": "eiusmod laborum pariatur nulla ut sint ipsum nulla amet dolore elit magna consequat ullamco consequat ullamco quis commodo anim officia"
                     }
                 ]

@@ -34,6 +34,7 @@ export interface IComment {
     id: string;
     answer_to?: string;
     name: string;
+    avatar?: string;
     date: number;
     content: string;
     replies?: IComment[];

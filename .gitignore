@@ -27,3 +27,6 @@ node_modules/
 .history
 .vscode
 .idea
+
+# Mac
+.DS_Store
